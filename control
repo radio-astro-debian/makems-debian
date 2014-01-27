@@ -1,0 +1,12 @@
+Source: makems
+Section: science
+Priority: extra
+Maintainer: Gijs Molenaar <gijs@pythonic.nl>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Homepage: https://github.com/ska-sa/makems
+
+Package: makems
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: TODO
