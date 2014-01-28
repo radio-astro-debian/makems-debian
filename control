@@ -9,4 +9,4 @@ Homepage: https://github.com/ska-sa/makems
 Package: makems
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: TODO
+Description: tool to create empty Measurement Sets
