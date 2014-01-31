@@ -1,3 +1,10 @@
+makems (1.3.0-2precise1) precise; urgency=low
+
+  * fix dependency issue
+  * add doc files
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Fri, 31 Jan 2014 08:32:48 +0000
+
 makems (1.3.0-1precise1) precise; urgency=low
 
   * Initial release

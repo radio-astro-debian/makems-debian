@@ -4,5 +4,14 @@
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
 
+override_dh_auto_configure:
+	dh_auto_configure -- -DCMAKE_MODULE_PATH:PATH=$(CURDIR)/LOFAR/CMake \
+		-DUSE_LOG4CPLUS=OFF -DBUILD_TESTING=OFF
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf LOFAR/CEP/MS/src/Package__Version.cc
+	rm -rf LOFAR/LCS/Common/src/Package__Version.cc
+
 %:
-	dh $@
+	dh $@  --parallel --sourcedirectory=LOFAR --builddirectory=build/gnu_opt
