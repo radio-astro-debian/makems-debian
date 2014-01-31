@@ -9,7 +9,7 @@ Homepage: https://github.com/ska-sa/makems
 Package: makems
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: creates a MeasurementSet
+Description: tool to create empty Measurement Sets
  Makems creates a MeasurementSet by filling in all metadata, while the data
  columns are filled with zeroes. Optionally the columns like MODEL_DATA needed
  for the CASA/AIPS++ imager are created too in a way they are recognized by
